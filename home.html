@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <form action="{% url 'listagem_usuarios' %}" method="pso">
+
+        {%  csrf_token %}
+
+        <div style="text-align: center;" class="container">
+    
+            <h1>Cadastro</h1>
+            <br>
+    
+            <p><input type="text" placeholder="Nome Completo"  name="username" class="username"/>
+            </p>
+                
+            <p><input type="text" placeholder="CPF" name="cpf" class="cpf">
+            </p>
+                
+            <p><button type="submit">Criar usuário</button>
+            </p>
+    
+            <span>
+                <p>Você já tem uma conta? <a href="../index.html">Logue aqui</a></p>
+            </span>
+
+            <h3 class="text"><p class="p"></p></h3>
+    
+        </div>
+
+
+
+    </form>
+    
+    <script src="cadastro.js"></script>
+
+</body>
+
+</html>
